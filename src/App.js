@@ -12,7 +12,7 @@ function App() {
   const [posicionActual, setPosicionActual] = useState(posicionAleatoria());
   let [totalPuntos, setTotalPuntos] = useState("0");
   const cambiarPosicion = () => {
-    setTimeout(() => setPosicionActual(posicionAleatoria), 1000);
+    setTimeout(() => setPosicionActual(posicionAleatoria), 200);
   };
   const sumarPunto = () => {
     setTotalPuntos(`${+totalPuntos + 1}`);
